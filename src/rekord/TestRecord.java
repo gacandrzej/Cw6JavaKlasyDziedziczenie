@@ -17,6 +17,7 @@ public class TestRecord {
 
         IO.println("k4: " + k4);
         IO.println("k5: " + k5);
+        
 
         // HashSet
         HashSet<Komputer> set = new HashSet<>();
