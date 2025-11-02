@@ -44,7 +44,9 @@ class KomputerTest {
 
     @Test
     void testWlacz() {
-        komputer.włacz();
+        assertDoesNotThrow(() -> komputer.włacz());
+        // Optionally, you could check for a side effect if 'wlacz' changed state
+        // For example, if there was a 'isOn' boolean field.
     }
 
 
