@@ -42,8 +42,13 @@ public class Laptop extends Komputer{
 
     @Override
     public String toString() {
-        return super.toString() + "Laptop{" +
-                "waga=" + waga +
+        // Zamiast wywoływać super.toString(), tworzymy kompletną reprezentację,
+        // która zawiera pola z klasy bazowej Komputer.
+        return "Laptop{" +
+                "producent='" + getProducent() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", rokProdukcji=" + getRokProdukcji() +
+                ", waga=" + waga +
                 ", iloscPortowUSB=" + iloscPortowUSB +
                 ", czasPracyNaBaterii=" + czasPracyNaBaterii +
                 '}';

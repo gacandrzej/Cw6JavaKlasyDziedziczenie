@@ -1,6 +1,8 @@
 package sealed;
 
-public sealed class Komputer permits Laptop, Smartfon {
+import java.util.Objects;
+
+public sealed class Komputer permits Laptop, Smartfon{
     private String producent;
     private String model;
     private int rokProdukcji;
@@ -51,4 +53,17 @@ public sealed class Komputer permits Laptop, Smartfon {
 
     // polimorfizm
     public void włacz(){ IO.println("Komputer się uruchamia ...");}
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Komputer komputer = (Komputer) o;
+        return rokProdukcji == komputer.rokProdukcji && Objects.equals(producent, komputer.producent) && Objects.equals(model, komputer.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(producent, model, rokProdukcji);
+    }
 }
