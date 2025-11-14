@@ -6,7 +6,7 @@ public record Komputer(String producent, String model, int rokProdukcji) {
         IO.println("Komputer się uruchamia ...");
     }
 
-    // Metoda copy — w recordzie tworzymy ręcznie
+    // metodę copy w recordzie tworzymy ręcznie
     public Komputer copy(String producent, String model, int rokProdukcji) {
         return new Komputer(
                 producent != null ? producent : this.producent,

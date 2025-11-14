@@ -10,7 +10,8 @@ public class TestRecord {
 
         IO.println("k1: " + k1);
         IO.println("k2: " + k2);
-
+        k1.equals(k2);
+        k1.hashCode();
         // inne testy
         Komputer k4 = new Komputer("Lenovo", "HYP", 2025);
         Komputer k5 = k4.copy(null, "Latitude", -1);

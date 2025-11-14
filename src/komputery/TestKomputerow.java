@@ -1,6 +1,7 @@
 package komputery;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class TestKomputerow {
 
@@ -29,7 +30,7 @@ public class TestKomputerow {
         IO.println();
 
         // --- HashSet ---
-        HashSet<Komputer> set = new HashSet<>();
+        Set<Komputer> set = new HashSet<>();
         set.add(k1);
         set.add(k2); // nie zostanie dodany, bo equals == true
         set.add(k3);
