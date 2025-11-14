@@ -54,5 +54,6 @@ public class Main {
     IO.println(smartfon2.toString());
     smartfon.włacz();
     smartfon2.włacz();
+
     }
 }
