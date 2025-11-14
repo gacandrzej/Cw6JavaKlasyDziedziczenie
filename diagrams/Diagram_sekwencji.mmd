@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant U as Użytkownik
+    participant T as TestRecord
+    participant RT as RecordTester
+    participant K as KomputerRecord
+    participant L as LaptopRecord
+    participant S as SmartfonRecord
+
+    U->>T: uruchom testNiezalezneRekordy()
+
+    T->>K: new KomputerRecord("Dell", "XPS", 2023)
+    T->>L: new LaptopRecord("Dell", "XPS 13", 2023, 1.2, 3, 12.5)
+    T->>S: new SmartfonRecord("Samsung", "S23", 2023, "Android", 256)
+
+    T->>RT: opisUrzadzenia(KomputerRecord)
+    RT->>RT: pattern matching: case KomputerRecord
+    RT-->>T: "🖥️ Komputer Dell XPS (2023)"
+
+    T->>RT: opisUrzadzenia(LaptopRecord)
+    RT->>RT: pattern matching: case LaptopRecord
+    RT-->>T: "💻 Laptop Dell XPS 13 (1.2kg, 12h)"
+
+    T->>RT: opisUrzadzenia(SmartfonRecord)
+    RT->>RT: pattern matching: case SmartfonRecord
+    RT-->>T: "📱 Smartfon Samsung S23 (Android, 256GB)"
+
+    T->>U: wyświetl wyniki

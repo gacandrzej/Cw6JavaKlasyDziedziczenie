@@ -1,0 +1,66 @@
+classDiagram
+%% SEALED CLASSES
+    class Komputer {
+        <<sealed>>
+        -String producent
+        -String model
+        -int rokProdukcji
+        +włacz()* void
+    }
+
+    class Laptop {
+        -double waga
+        -int iloscPortowUSB
+        -float czasPracyNaBaterii
+        +włacz() void
+    }
+
+    class Smartfon {
+        -String systemOperacyjny
+        -int ilośćPamięci
+        +włacz() void
+    }
+
+%% RECORDS
+    class KomputerRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +wlacz() void
+        +copy() KomputerRecord
+    }
+
+    class LaptopRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +double waga
+        +int iloscPortowUSB
+        +float czasPracyNaBaterii
+        +wlacz() void
+    }
+
+    class SmartfonRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +String systemOperacyjny
+        +int ilośćPamięci
+        +wlacz() void
+    }
+
+%% INHERITANCE
+    Komputer <|-- Laptop
+    Komputer <|-- Smartfon
+
+%% PATTERN MATCHING
+    class PatternMatcher {
+        +opisUrzadzenia(Object)$ String
+        +bezpiecznySwitch(Komputer)$ String
+    }
+
+    PatternMatcher ..> Komputer : "pattern matching"
+    PatternMatcher ..> KomputerRecord : "record patterns"
