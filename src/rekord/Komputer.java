@@ -1,6 +1,6 @@
 package rekord;
 
-public record Komputer(String producent, String model, int rokProdukcji) {
+public record Komputer(String producent, String model, int rokProdukcji) implements Urzadzenie {
 
     public void wlacz() {
         IO.println("Komputer się uruchamia ...");

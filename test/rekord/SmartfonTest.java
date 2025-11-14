@@ -25,7 +25,7 @@ class SmartfonTest {
 
     @Test
     void testToString() {
-        String expected = "SmartfonRecord[producent=Samsung, model=Galaxy S21, rokProdukcji=2022, systemOperacyjny=Android, ilośćPamięci=128]";
+        String expected = "Smartfon[producent=Samsung, model=Galaxy S21, rokProdukcji=2022, systemOperacyjny=Android, ilośćPamięci=128]";
         assertEquals(expected, smartfon.toString());
     }
 

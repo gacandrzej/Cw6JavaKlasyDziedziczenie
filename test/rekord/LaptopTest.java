@@ -26,7 +26,7 @@ class LaptopTest {
 
     @Test
     void testToString() {
-        String expected = "LaptopRecord[producent=Dell, model=XPS 15, rokProdukcji=2022, waga=1.8, iloscPortowUSB=3, czasPracyNaBaterii=8.0]";
+        String expected = "Laptop[producent=Dell, model=XPS 15, rokProdukcji=2022, waga=1.8, iloscPortowUSB=3, czasPracyNaBaterii=8.0]";
         assertEquals(expected, laptop.toString());
     }
 

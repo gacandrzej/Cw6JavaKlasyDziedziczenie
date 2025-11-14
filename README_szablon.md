@@ -7,8 +7,8 @@ Projekt edukacyjny w Javie prezentujący ...:
 - opis 2
 
 
-Projekt zawiera również testy jednostkowe JUnit 5, 
-które weryfikują poprawność działania algorytmów 
+Projekt zawiera również testy jednostkowe JUnit 5,
+które weryfikują poprawność działania algorytmów
 oraz metod.
 
 ---
