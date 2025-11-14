@@ -1,0 +1,3160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST-junit-jupiter.xml</title>
+    <style type="text/css">
+        body {
+    background-color: white;
+    padding-bottom: 20em;
+    margin: 0;
+    min-height: 15cm;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: #007acc;
+    color: white;
+    padding: 3mm;
+    margin-top: 0;
+    margin-bottom: 1mm;
+}
+
+.footer {
+    font-style: italic;
+    font-size: small;
+    text-align: right;
+    padding: 1em;
+}
+
+.testsuite {
+    padding-bottom: 2em;
+    margin-left: 1em;
+}
+
+.proplist {
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+.proplist th {
+    background-color: silver;
+    width: 5em;
+    padding: 2px;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.proplist td {
+    padding: 2px;
+    word-break: break-all;
+}
+
+.index-table {
+    width: 90%;
+    margin-left: 1em;
+}
+
+.index-table td {
+    vertical-align: top;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.failure-index {
+
+}
+
+.toc {
+    margin-bottom: 2em;
+    font-family: monospace;
+}
+
+.stdio, pre {
+    min-height: 1em;
+    background-color: #1e1e1e;
+    color: silver;
+    padding: 0.5em;
+}
+.tdpre {
+    background-color: #1e1e1e;
+}
+
+.test {
+    margin-left: 0.5cm;
+}
+
+.toc {
+    list-style: none;
+}
+
+.toc li.outcome {
+    list-style: none;
+}
+
+.toc li.outcome::before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.27em;
+    margin-left: -1.27em;
+    font-size: 1.2em;
+}
+
+.toc li.outcome-failed {
+    background-color: lightcoral;
+}
+
+.toc li.outcome-failed::before {
+    color: red;
+}
+
+.toc li.outcome-passed::before {
+    color: green;
+}
+
+.toc li.outcome-skipped::before {
+    color: orange;
+}
+
+.testcases .outcome {
+    border-left: 1em;
+    padding: 2px;
+}
+
+.testcases .outcome-failed {
+    border-left: 1em solid lightcoral;
+}
+
+
+.outcome-passed {
+    border-left: 1em solid lightgreen;
+}
+
+.outcome-skipped {
+    border-left: 1em dotted silver;
+}
+
+.testcases .outcome-passed {
+    border-left: 1em solid lightgreen;
+}
+
+.testcases .outcome-skipped {
+    border-left: 1em solid #FED8B1;
+}
+
+.stats-table {
+}
+
+.stats-table td {
+    min-width: 4em;
+    text-align: right;
+}
+
+.stats-table .failed {
+    background-color: lightcoral;
+}
+
+.stats-table .passed {
+    background-color: lightgreen;
+}
+
+.matrix-table {
+    table-layout: fixed;
+    border-spacing: 0;
+    width: available;
+    margin-left: 1em;
+}
+
+.matrix-table td {
+    vertical-align: center;
+}
+
+.matrix-table td:last-child {
+    width: 0;
+}
+
+.matrix-table tr:hover {
+    background-color: yellow;
+}
+
+.matrix-axis-name {
+    white-space: nowrap;
+    padding-right: 0.5em;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    text-align: right;
+}
+
+.matrix-axis-line {
+    border-left: 1px solid black;
+    width: 0.5em;
+}
+
+.matrix-classname {
+    text-align: left;
+    width: 100%;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-casename {
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    padding-left: 1em;
+    border-bottom: 1px solid silver;
+}
+
+.matrix-result {
+    display: block;
+    width: 1em;
+    text-align: center;
+    padding: 1mm;
+    margin: 0;
+}
+
+.matrix-result-combined {
+    white-space: nowrap;
+    padding-right: 0.2em;
+    text-align: right;
+}
+
+.matrix-result-failed {
+    background-color: lightcoral;
+}
+
+.matrix-result-passed {
+    background-color: lightgreen;
+}
+
+.matrix-result-skipped {
+    background-color: lightyellow;
+}
+
+.matrix-even {
+    background-color: lightgray;
+}
+    </style>
+</head>
+<body>
+    
+<h1>
+    Test Report : TEST-junit-jupiter.xml
+</h1>
+
+
+<a id="toc"></a>
+<table class="index-table">
+    <tr>
+        <td>
+            <ul class="toc">
+            
+                
+                <li>komputery.LaptopTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#1821c62a-733d-4929-a66c-0edcf930c6cc">testHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b0e0b2c1-106e-401d-8df8-cb7ac1789650">setRokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#24cf4eed-4c3c-4410-8325-43f0b970dfb0">wyłącz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#f93f8a8e-388c-481d-b5b7-f6299751931d">testEqualsDifferentObject()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#67f95853-2a0d-4276-8464-8e5dc6966cd7">setProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#4b0f29e5-723e-4cda-bbe3-7758736cf6af">testEqualsDifferentProducer()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b204f293-702b-408b-8eae-0f78d68b6495">testEquals()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#88a42cfb-112c-435f-b6de-abdb7f84d5bc">testEqualsDifferentClass()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#7f3db5a4-c79b-4f10-941f-94583bd712be">getProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b9828b8e-2b6d-416f-8c13-0645dfafc5d9">setIloscPortowUSB()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#c68fdd86-bda2-428d-b88e-99bd89dfa446">getModel()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#4799409c-28f5-4528-bc3a-203bbbdcff1d">setWaga()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#9f16c199-b3ed-41ce-8430-7690fc450b9f">setModel()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#fffa308b-d74c-4698-a87c-f1f1524d1288">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#867f91b2-cc31-42bc-882b-bec0791714aa">getCzasPracyNaBaterii()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#0187f79f-5414-4b52-98cf-7566cb9648b7">getWaga()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#aa4381ad-f56c-41c7-9667-15fc98cd87c2">getRokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#ce224699-4b7e-4d36-886c-aebe964a41dc">testEqualsNull()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#a335b580-3c7f-4851-8079-7115695515ee">testEqualsSameObject()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#df3c7d77-d6cf-4298-8b9a-1b9910823031">setCzasPracyNaBaterii()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#ebf54389-5e9e-47bc-ab16-5a17b7459346">getIloscPortowUSB()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>rekord.SmartfonTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#bd699af1-aa02-4cf7-a4ff-18b9743e263e">testNotEquals()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#300de7a8-5288-4f3a-9cc4-f7fda04c57c4">testEqualsAndHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d7a78647-e2cf-4c38-ab49-626aa531bed7">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d04da593-1a60-4a7c-8708-500dea4d0b16">testAccessors()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>komputery.SmartfonTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#8b200f50-8c35-4be8-af7b-3f3bf40b010c">testEqualsDifferentYear()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#67a4d615-e6a2-4a5d-95b1-b1fa887995af">setIlośćPamięci()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#daaac105-464b-4c2d-a807-a502752ac89b">getSystemOperacyjny()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#aec693f9-6708-468a-8047-04c52e0e1aa6">testEqualsDifferentOS()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#e852b782-25da-4f39-baa5-8bcd8cd1500d">getIlośćPamięci()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#264c0c21-c677-45e5-b519-91848363f2be">testEqualsDifferentMemory()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#99798a87-8508-4774-befa-1d57528b7b04">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d426245e-2420-41d9-81d8-e2b195c3c96f">testEqualsDifferentObject()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#735f5685-a4ef-44c6-b70c-7eb8afd24798">testEquals()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#016d1942-b79c-4eda-97c0-239b50ca7e48">setProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#0b441ea2-0812-4226-ba8c-ceaf47349740">testEqualsNull()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#37007e27-43fa-4f11-83b5-a97ea95696f6">testEqualsDifferentProducer()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#1188b0d6-a3d5-4586-8893-29630102fcc5">testHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#dbb21022-0fed-4088-8f62-a70de1ddcb5f">getProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d2582e5d-2b0a-4e63-b69c-71676b81b5aa">setSystemOperacyjny()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#1de6fa74-fce5-4447-9564-c16c86ca2aa8">testEqualsDifferentModel()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>rekord.KomputerTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#b59f0c0a-586a-4f2c-ba00-56d0d32b2618">testKomputer()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#45aea452-2dbd-4592-a8b0-80b3d36b82c9">producent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#59fd0f97-d945-4a91-8fec-3ed47419b6bb">wlacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#84768b6b-0f93-4b88-aa83-678ff77354d2">rokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#0ad8a008-e2b7-457e-ab2b-46c7787cd3ad">myFirstTest()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#9f0a0264-acd3-4fff-bbb3-22dee7f2637b">model()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>komputery.KomputerTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#df035efe-dbe2-4c02-881b-64e04919271a">setProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#55783e57-a6ec-4865-a519-a649dc1e8728">testCopyEquality()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#95ded36e-5b81-4781-8a14-23bf115b53b1">testEquals_sameInstance()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#39080ff6-4542-413a-b254-c1f7c571b824">copy()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#658aa279-7979-4a44-a31e-d67901a9b2db">wyłacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#f6cea807-6fc6-46e5-b0f9-47ea5edd7767">isWlaczony()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d0820876-eea2-408d-8462-eac674751e7f">testEquals()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#50b671ad-4ea4-4030-9ce5-091b6be57b49">włacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#2801735b-3387-4820-8af3-04d25df0e810">getRokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#dcd1fc8c-fba4-4ee4-9cb6-1961dac154e6">setRokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#d70e843f-8225-4449-9861-5245238fc84d">testEquals_differentProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#99f250a0-2b45-418c-a24e-7c1dced679b8">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#397ea98f-e2e8-45d6-9d5a-fbf54e932fde">testEquals_differentClass()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#f7f5ab0b-be83-454e-9911-8901cb2e5942">getModel()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#4cc7aee9-35b1-4ed9-aa1a-7b56c6d2745f">testCopyHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#35c6ebf8-782a-4cb1-a96d-3cbb73c0c733">setModel()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#9e205a4f-b48c-41c5-95ea-fe81d84b92ea">testHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#3055bbba-d686-4866-a5a9-7bcb54e29c52">getProducent()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>rekord.LaptopTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#c7cef108-cad2-4af6-bca9-33cee909a46a">testEqualsAndHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#cf97dd36-70cc-42ea-a6bb-78f976e75ab0">testNotEquals()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#3f7d44b0-cf0b-44d5-bdbe-81fe8c1e802d">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#784d1bf1-3c18-40ab-9055-1209265a3c5a">testAccessors()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>sealed.SmartfonTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#81d505d3-7863-4991-9d6d-9d22b2b83fdd">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#f10a123d-6370-4657-8692-cb146410c9bb">getRokProdukcji()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#48b5e54a-b471-4a57-b524-9ddf9152ca38">getProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b8b09d60-ec14-4efc-a79c-9be386bc67af">włacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#fbe9531b-661d-49f3-9e9d-0686a807f283">getSystemOperacyjny()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#1537c4ab-c628-4493-837e-4a5a2e80e5c8">testEqualsAndHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b5f384c9-3e66-4368-b460-331e6dfdbdbb">getIlośćPamięci()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#b55539e8-ed75-4cd0-b6eb-16982dacc657">getModel()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>sealed.LaptopTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#a77c3772-fbc2-4206-9f86-2310e3c6a5fa">testGetters()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#0035125f-c6d7-4a88-97a9-341ca47871bc">testEqualsAndHashCode()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#43b474d5-a700-48dc-a44e-7aafc2bb0009">włacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#650c6705-fa4a-4991-9631-a39057b4f331">testToString()</a></li>
+                    
+                </ul>
+                </li>
+                
+                <li>sealed.KomputerTest
+                <ul>
+                    
+                    <li class="outcome outcome-passed"><a href="#76e87ffc-c803-4900-bc8f-cc54101a3c8f">testWlacz()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#683c71de-ac4e-4f4d-9ea2-cd6f6641b800">setProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#fa3e7fd3-28cb-4151-be79-b8097a381a66">testToString()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#fa0524e3-6c06-4821-8ccc-675703f8c56d">getProducent()</a></li>
+                    
+                    <li class="outcome outcome-passed"><a href="#6e8bb048-dd68-43a9-b76d-09c644c2b916">testKomputer()</a></li>
+                    
+                </ul>
+                </li>
+                
+            
+            </ul>
+        </td>
+        <td class="failure-index">
+            <ul class="toc">
+            
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+
+    <div class="testsuite">
+        <h2>Test Suite: JUnit Jupiter</h2>
+        <a id="88854bd1-633d-45ed-8a18-14446c816313"></a>
+        
+        
+        <h3>Suite Properties</h3>
+        <table class="proplist">
+            
+            <tr>
+                <th>file.encoding</th><td>UTF-8</td>
+            </tr>
+            
+            <tr>
+                <th>file.separator</th><td>\</td>
+            </tr>
+            
+            <tr>
+                <th>java.class.path</th><td>libs/junit-platform-console-standalone-1.10.0.jar</td>
+            </tr>
+            
+            <tr>
+                <th>java.class.version</th><td>69.0</td>
+            </tr>
+            
+            <tr>
+                <th>java.home</th><td>C:\Program Files\Java\jdk-25</td>
+            </tr>
+            
+            <tr>
+                <th>java.io.tmpdir</th><td>C:\Users\egzamin\AppData\Local\Temp\</td>
+            </tr>
+            
+            <tr>
+                <th>java.library.path</th><td>C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\egzamin\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Java\jdk-25\bin;.</td>
+            </tr>
+            
+            <tr>
+                <th>java.runtime.name</th><td>OpenJDK Runtime Environment</td>
+            </tr>
+            
+            <tr>
+                <th>java.runtime.version</th><td>25+36-3489</td>
+            </tr>
+            
+            <tr>
+                <th>java.specification.name</th><td>Java Platform API Specification</td>
+            </tr>
+            
+            <tr>
+                <th>java.specification.vendor</th><td>Oracle Corporation</td>
+            </tr>
+            
+            <tr>
+                <th>java.specification.version</th><td>25</td>
+            </tr>
+            
+            <tr>
+                <th>java.vendor</th><td>Oracle Corporation</td>
+            </tr>
+            
+            <tr>
+                <th>java.vendor.url</th><td>https://java.oracle.com/</td>
+            </tr>
+            
+            <tr>
+                <th>java.vendor.url.bug</th><td>https://bugreport.java.com/bugreport/</td>
+            </tr>
+            
+            <tr>
+                <th>java.version</th><td>25</td>
+            </tr>
+            
+            <tr>
+                <th>java.version.date</th><td>2025-09-16</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.compressedOopsMode</th><td>Zero based</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.info</th><td>mixed mode, sharing</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.name</th><td>OpenJDK 64-Bit Server VM</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.specification.name</th><td>Java Virtual Machine Specification</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.specification.vendor</th><td>Oracle Corporation</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.specification.version</th><td>25</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.vendor</th><td>Oracle Corporation</td>
+            </tr>
+            
+            <tr>
+                <th>java.vm.version</th><td>25+36-3489</td>
+            </tr>
+            
+            <tr>
+                <th>jdk.debug</th><td>release</td>
+            </tr>
+            
+            <tr>
+                <th>line.separator</th><td> </td>
+            </tr>
+            
+            <tr>
+                <th>native.encoding</th><td>Cp1250</td>
+            </tr>
+            
+            <tr>
+                <th>os.arch</th><td>amd64</td>
+            </tr>
+            
+            <tr>
+                <th>os.name</th><td>Windows 11</td>
+            </tr>
+            
+            <tr>
+                <th>os.version</th><td>10.0</td>
+            </tr>
+            
+            <tr>
+                <th>path.separator</th><td>;</td>
+            </tr>
+            
+            <tr>
+                <th>stderr.encoding</th><td>cp852</td>
+            </tr>
+            
+            <tr>
+                <th>stdin.encoding</th><td>cp852</td>
+            </tr>
+            
+            <tr>
+                <th>stdout.encoding</th><td>cp852</td>
+            </tr>
+            
+            <tr>
+                <th>sun.arch.data.model</th><td>64</td>
+            </tr>
+            
+            <tr>
+                <th>sun.boot.library.path</th><td>C:\Program Files\Java\jdk-25\bin</td>
+            </tr>
+            
+            <tr>
+                <th>sun.cpu.endian</th><td>little</td>
+            </tr>
+            
+            <tr>
+                <th>sun.cpu.isalist</th><td>amd64</td>
+            </tr>
+            
+            <tr>
+                <th>sun.io.unicode.encoding</th><td>UnicodeLittle</td>
+            </tr>
+            
+            <tr>
+                <th>sun.java.command</th><td>libs/junit-platform-console-standalone-1.10.0.jar --classpath bin --scan-classpath --reports-dir reports --details verbose</td>
+            </tr>
+            
+            <tr>
+                <th>sun.java.launcher</th><td>SUN_STANDARD</td>
+            </tr>
+            
+            <tr>
+                <th>sun.jnu.encoding</th><td>Cp1250</td>
+            </tr>
+            
+            <tr>
+                <th>sun.management.compiler</th><td>HotSpot 64-Bit Tiered Compilers</td>
+            </tr>
+            
+            <tr>
+                <th>sun.os.patch.level</th><td></td>
+            </tr>
+            
+            <tr>
+                <th>user.country</th><td>PL</td>
+            </tr>
+            
+            <tr>
+                <th>user.dir</th><td>C:\Users\egzamin\IdeaProjects\KopiaKlasyDziedziczenieKl2pgr1</td>
+            </tr>
+            
+            <tr>
+                <th>user.home</th><td>C:\Users\egzamin</td>
+            </tr>
+            
+            <tr>
+                <th>user.language</th><td>pl</td>
+            </tr>
+            
+            <tr>
+                <th>user.name</th><td>user</td>
+            </tr>
+            
+            <tr>
+                <th>user.script</th><td></td>
+            </tr>
+            
+            <tr>
+                <th>user.timezone</th><td>Europe/Warsaw</td>
+            </tr>
+            
+            <tr>
+                <th>user.variant</th><td></td>
+            </tr>
+            
+        </table>
+        
+        <h3>Results</h3>
+        <table class="proplist">
+            <tr>
+                <th>Duration</th><td>0.198 sec</td>
+            </tr>
+            <tr>
+                <th>Tests</th><td>86</td>
+            </tr>
+            <tr>
+                <th>Failures</th><td>0</td>
+            </tr>
+        </table>
+
+        <div class="testclasses">
+            <h3>Tests</h3>
+            
+            <div class="testclass">
+                <h4>komputery.LaptopTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="1821c62a-733d-4929-a66c-0edcf930c6cc"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testHashCode()]
+display-name: testHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b0e0b2c1-106e-401d-8df8-cb7ac1789650"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setRokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setRokProdukcji()]
+display-name: setRokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="24cf4eed-4c3c-4410-8325-43f0b970dfb0"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>wyłącz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:wyłącz()]
+display-name: wyłącz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="f93f8a8e-388c-481d-b5b7-f6299751931d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentObject()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentObject()]
+display-name: testEqualsDifferentObject()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="67f95853-2a0d-4276-8464-8e5dc6966cd7"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setProducent()]
+display-name: setProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="4b0f29e5-723e-4cda-bbe3-7758736cf6af"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentProducer()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentProducer()]
+display-name: testEqualsDifferentProducer()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b204f293-702b-408b-8eae-0f78d68b6495"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEquals()]
+display-name: testEquals()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="88a42cfb-112c-435f-b6de-abdb7f84d5bc"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentClass()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentClass()]
+display-name: testEqualsDifferentClass()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="7f3db5a4-c79b-4f10-941f-94583bd712be"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getProducent()]
+display-name: getProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b9828b8e-2b6d-416f-8c13-0645dfafc5d9"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setIloscPortowUSB()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setIloscPortowUSB()]
+display-name: setIloscPortowUSB()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="c68fdd86-bda2-428d-b88e-99bd89dfa446"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getModel()]
+display-name: getModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="4799409c-28f5-4528-bc3a-203bbbdcff1d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setWaga()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setWaga()]
+display-name: setWaga()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="9f16c199-b3ed-41ce-8430-7690fc450b9f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setModel()]
+display-name: setModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="fffa308b-d74c-4698-a87c-f1f1524d1288"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.003 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="867f91b2-cc31-42bc-882b-bec0791714aa"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getCzasPracyNaBaterii()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getCzasPracyNaBaterii()]
+display-name: getCzasPracyNaBaterii()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="0187f79f-5414-4b52-98cf-7566cb9648b7"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getWaga()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getWaga()]
+display-name: getWaga()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="aa4381ad-f56c-41c7-9667-15fc98cd87c2"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getRokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="ce224699-4b7e-4d36-886c-aebe964a41dc"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsNull()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsNull()]
+display-name: testEqualsNull()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="a335b580-3c7f-4851-8079-7115695515ee"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsSameObject()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsSameObject()]
+display-name: testEqualsSameObject()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="df3c7d77-d6cf-4298-8b9a-1b9910823031"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setCzasPracyNaBaterii()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setCzasPracyNaBaterii()]
+display-name: setCzasPracyNaBaterii()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="ebf54389-5e9e-47bc-ab16-5a17b7459346"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getIloscPortowUSB()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getIloscPortowUSB()]
+display-name: getIloscPortowUSB()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>rekord.SmartfonTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="bd699af1-aa02-4cf7-a4ff-18b9743e263e"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testNotEquals()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testNotEquals()]
+display-name: testNotEquals()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="300de7a8-5288-4f3a-9cc4-f7fda04c57c4"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsAndHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d7a78647-e2cf-4c38-ab49-626aa531bed7"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.004 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d04da593-1a60-4a7c-8708-500dea4d0b16"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testAccessors()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testAccessors()]
+display-name: testAccessors()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>komputery.SmartfonTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="8b200f50-8c35-4be8-af7b-3f3bf40b010c"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentYear()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentYear()]
+display-name: testEqualsDifferentYear()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="67a4d615-e6a2-4a5d-95b1-b1fa887995af"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setIlośćPamięci()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setIlośćPamięci()]
+display-name: setIlośćPamięci()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="daaac105-464b-4c2d-a807-a502752ac89b"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getSystemOperacyjny()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getSystemOperacyjny()]
+display-name: getSystemOperacyjny()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="aec693f9-6708-468a-8047-04c52e0e1aa6"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentOS()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentOS()]
+display-name: testEqualsDifferentOS()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="e852b782-25da-4f39-baa5-8bcd8cd1500d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getIlośćPamięci()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getIlośćPamięci()]
+display-name: getIlośćPamięci()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="264c0c21-c677-45e5-b519-91848363f2be"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentMemory()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentMemory()]
+display-name: testEqualsDifferentMemory()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="99798a87-8508-4774-befa-1d57528b7b04"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d426245e-2420-41d9-81d8-e2b195c3c96f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentObject()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentObject()]
+display-name: testEqualsDifferentObject()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="735f5685-a4ef-44c6-b70c-7eb8afd24798"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEquals()]
+display-name: testEquals()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="016d1942-b79c-4eda-97c0-239b50ca7e48"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setProducent()]
+display-name: setProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="0b441ea2-0812-4226-ba8c-ceaf47349740"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsNull()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsNull()]
+display-name: testEqualsNull()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="37007e27-43fa-4f11-83b5-a97ea95696f6"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentProducer()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentProducer()]
+display-name: testEqualsDifferentProducer()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="1188b0d6-a3d5-4586-8893-29630102fcc5"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testHashCode()]
+display-name: testHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="dbb21022-0fed-4088-8f62-a70de1ddcb5f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getProducent()]
+display-name: getProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d2582e5d-2b0a-4e63-b69c-71676b81b5aa"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setSystemOperacyjny()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setSystemOperacyjny()]
+display-name: setSystemOperacyjny()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="1de6fa74-fce5-4447-9564-c16c86ca2aa8"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsDifferentModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentModel()]
+display-name: testEqualsDifferentModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>rekord.KomputerTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b59f0c0a-586a-4f2c-ba00-56d0d32b2618"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testKomputer()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:testKomputer()]
+display-name: testKomputer()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="45aea452-2dbd-4592-a8b0-80b3d36b82c9"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>producent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:producent()]
+display-name: producent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="59fd0f97-d945-4a91-8fec-3ed47419b6bb"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>wlacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:wlacz()]
+display-name: wlacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="84768b6b-0f93-4b88-aa83-678ff77354d2"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>rokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:rokProdukcji()]
+display-name: rokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="0ad8a008-e2b7-457e-ab2b-46c7787cd3ad"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>myFirstTest()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:myFirstTest()]
+display-name: myFirstTest()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="9f0a0264-acd3-4fff-bbb3-22dee7f2637b"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>model()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:model()]
+display-name: model()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>komputery.KomputerTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="df035efe-dbe2-4c02-881b-64e04919271a"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setProducent()]
+display-name: setProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="55783e57-a6ec-4865-a519-a649dc1e8728"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testCopyEquality()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testCopyEquality()]
+display-name: testCopyEquality()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="95ded36e-5b81-4781-8a14-23bf115b53b1"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals_sameInstance()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_sameInstance()]
+display-name: testEquals_sameInstance()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="39080ff6-4542-413a-b254-c1f7c571b824"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>copy()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:copy()]
+display-name: copy()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="658aa279-7979-4a44-a31e-d67901a9b2db"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>wyłacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:wyłacz()]
+display-name: wyłacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="f6cea807-6fc6-46e5-b0f9-47ea5edd7767"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>isWlaczony()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.002 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:isWlaczony()]
+display-name: isWlaczony()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d0820876-eea2-408d-8462-eac674751e7f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals()]
+display-name: testEquals()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="50b671ad-4ea4-4030-9ce5-091b6be57b49"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>włacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:włacz()]
+display-name: włacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="2801735b-3387-4820-8af3-04d25df0e810"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getRokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="dcd1fc8c-fba4-4ee4-9cb6-1961dac154e6"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setRokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setRokProdukcji()]
+display-name: setRokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="d70e843f-8225-4449-9861-5245238fc84d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals_differentProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.016 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_differentProducent()]
+display-name: testEquals_differentProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="99f250a0-2b45-418c-a24e-7c1dced679b8"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.003 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="397ea98f-e2e8-45d6-9d5a-fbf54e932fde"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEquals_differentClass()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_differentClass()]
+display-name: testEquals_differentClass()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="f7f5ab0b-be83-454e-9911-8901cb2e5942"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getModel()]
+display-name: getModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="4cc7aee9-35b1-4ed9-aa1a-7b56c6d2745f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testCopyHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testCopyHashCode()]
+display-name: testCopyHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="35c6ebf8-782a-4cb1-a96d-3cbb73c0c733"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setModel()]
+display-name: setModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="9e205a4f-b48c-41c5-95ea-fe81d84b92ea"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testHashCode()]
+display-name: testHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="3055bbba-d686-4866-a5a9-7bcb54e29c52"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getProducent()]
+display-name: getProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>rekord.LaptopTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="c7cef108-cad2-4af6-bca9-33cee909a46a"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsAndHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.006 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="cf97dd36-70cc-42ea-a6bb-78f976e75ab0"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testNotEquals()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testNotEquals()]
+display-name: testNotEquals()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="3f7d44b0-cf0b-44d5-bdbe-81fe8c1e802d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.008 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="784d1bf1-3c18-40ab-9055-1209265a3c5a"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testAccessors()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testAccessors()]
+display-name: testAccessors()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>sealed.SmartfonTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="81d505d3-7863-4991-9d6d-9d22b2b83fdd"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="f10a123d-6370-4657-8692-cb146410c9bb"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getRokProdukcji()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="48b5e54a-b471-4a57-b524-9ddf9152ca38"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getProducent()]
+display-name: getProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b8b09d60-ec14-4efc-a79c-9be386bc67af"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>włacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:włacz()]
+display-name: włacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="fbe9531b-661d-49f3-9e9d-0686a807f283"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getSystemOperacyjny()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getSystemOperacyjny()]
+display-name: getSystemOperacyjny()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="1537c4ab-c628-4493-837e-4a5a2e80e5c8"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsAndHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b5f384c9-3e66-4368-b460-331e6dfdbdbb"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getIlośćPamięci()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getIlośćPamięci()]
+display-name: getIlośćPamięci()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="b55539e8-ed75-4cd0-b6eb-16982dacc657"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getModel()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getModel()]
+display-name: getModel()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>sealed.LaptopTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="a77c3772-fbc2-4206-9f86-2310e3c6a5fa"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testGetters()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testGetters()]
+display-name: testGetters()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="0035125f-c6d7-4a88-97a9-341ca47871bc"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testEqualsAndHashCode()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="43b474d5-a700-48dc-a44e-7aafc2bb0009"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>włacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:włacz()]
+display-name: włacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="650c6705-fa4a-4991-9631-a39057b4f331"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <div class="testclass">
+                <h4>sealed.KomputerTest</h4>
+                <div class="testcases">
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="76e87ffc-c803-4900-bc8f-cc54101a3c8f"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testWlacz()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testWlacz()]
+display-name: testWlacz()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="683c71de-ac4e-4f4d-9ea2-cd6f6641b800"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>setProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:setProducent()]
+display-name: setProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="fa3e7fd3-28cb-4151-be79-b8097a381a66"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testToString()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testToString()]
+display-name: testToString()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="fa0524e3-6c06-4821-8ccc-675703f8c56d"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>getProducent()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.0 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:getProducent()]
+display-name: getProducent()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                    <div class="test outcome outcome-passed">
+                        <a id="6e8bb048-dd68-43a9-b76d-09c644c2b916"></a>
+                        <table class="proplist">
+                            <tr><th>Test case:</th><td><b>testKomputer()</b></td></tr>
+                            <tr><th>Outcome:</th><td>Passed</td></tr>
+                            <tr><th>Duration:</th><td>0.001 sec</td></tr>
+                        
+                        
+                        </table>
+
+                        
+                        
+
+                        
+                        
+                        <div class="stdout"><i>Stdout</i><br>
+                            <pre>
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testKomputer()]
+display-name: testKomputer()
+</pre>
+                        </div>
+                        
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+        <h3>Suite stdout:</h3>
+        <pre class="stdio">
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+</pre>
+        <h3>Suite stderr:</h3>
+        <pre class="stdio">None</pre>
+    
+
+
+
+<p class="footer">
+    Generated by junit2html
+</p>
+</body>
+</html>

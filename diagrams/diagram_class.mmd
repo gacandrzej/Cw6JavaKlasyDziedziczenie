@@ -1,0 +1,131 @@
+classDiagram
+    direction TB
+
+%% =============================================
+%% SEALED CLASSES HIERARCHY (sealed package)
+%% =============================================
+    note for Komputer "sealed class\npermits Laptop, Smartfon"
+    class Komputer {
+        <<sealed>>
+        -String producent
+        -String model
+        -int rokProdukcji
+        +Komputer(String, String, int)
+        +getProducent() String
+        +getModel() String
+        +getRokProdukcji() int
+        +włacz() void
+        +toString() String
+        +equals(Object) boolean
+        +hashCode() int
+    }
+
+    class Laptop {
+        -double waga
+        -int iloscPortowUSB
+        -float czasPracyNaBaterii
+        +Laptop(String, String, int, double, int, float)
+        +getWaga() double
+        +getIloscPortowUSB() int
+        +getCzasPracyNaBaterii() float
+        +włacz() void
+        +toString() String
+        +equals(Object) boolean
+        +hashCode() int
+    }
+
+    class Smartfon {
+        -String systemOperacyjny
+        -int ilośćPamięci
+        +Smartfon(String, String, int, String, int)
+        +getSystemOperacyjny() String
+        +getIlośćPamięci() int
+        +włacz() void
+        +toString() String
+    }
+
+    Komputer <|-- Laptop : extends
+    Komputer <|-- Smartfon : extends
+
+%% =============================================
+%% RECORDS (rekord package)
+%% =============================================
+    class KomputerRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +wlacz() void
+        +copy(String, String, int) KomputerRecord
+        +producent() String
+        +model() String
+        +rokProdukcji() int
+        +toString() String
+        +equals(Object) boolean
+        +hashCode() int
+    }
+
+    class LaptopRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +double waga
+        +int iloscPortowUSB
+        +float czasPracyNaBaterii
+        +wlacz() void
+        +czyLekki() boolean
+    }
+
+    class SmartfonRecord {
+        <<record>>
+        +String producent
+        +String model
+        +int rokProdukcji
+        +String systemOperacyjny
+        +int ilośćPamięci
+        +wlacz() void
+        +czyDuzaPamiec() boolean
+    }
+
+%% =============================================
+%% PATTERN MATCHING USAGE
+%% =============================================
+    class RecordTester {
+        <<utility>>
+        +opisUrzadzenia(Object) String
+        +ocenUrzadzenie(Object) String
+        +przetworzKolekcje(Object[]) void
+    }
+
+    class TestRecord {
+        +main() void
+        +testNiezalezneRekordy() void
+    }
+
+    class TestSealed {
+        +main() void
+        +przetworzKomputer(Komputer) void
+    }
+
+%% =============================================
+%% RELATIONSHIPS
+%% =============================================
+    RecordTester ..> KomputerRecord : uses
+    RecordTester ..> LaptopRecord : uses
+    RecordTester ..> SmartfonRecord : uses
+
+    TestRecord ..> KomputerRecord : tests
+    TestRecord ..> LaptopRecord : tests
+    TestRecord ..> SmartfonRecord : tests
+
+    TestSealed ..> Komputer : tests
+    TestSealed ..> Laptop : tests
+    TestSealed ..> Smartfon : tests
+
+%% =============================================
+%% PATTERN MATCHING EXAMPLES
+%% =============================================
+    note for RecordTester "Pattern Matching:\nswitch (urzadzenie) {\n  case KomputerRecord(String p, String m, int r)\n  case LaptopRecord(String p, String m, int r, double w, ...)\n}"
+
+    note for TestSealed "Safe Pattern Matching:\nswitch (komputer) {\n  case Laptop l -> ...\n  case Smartfon s -> ...\n  // No default needed!\n}"

@@ -1,6 +1,6 @@
 package sealed;
 
-public class KomputerTester {
+public class TestSealed {
     /**
      * Proste użycie pattern matching z instanceof
      * @param komputer Komputer

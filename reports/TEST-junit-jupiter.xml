@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="86" skipped="0" failures="0" errors="0" time="0.198" hostname="PC" timestamp="2025-11-14T11:52:50">
+<properties>
+<property name="file.encoding" value="UTF-8"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="libs/junit-platform-console-standalone-1.10.0.jar"/>
+<property name="java.class.version" value="69.0"/>
+<property name="java.home" value="C:\Program Files\Java\jdk-25"/>
+<property name="java.io.tmpdir" value="C:\Users\egzamin\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Program Files\Java\jdk-25\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\egzamin\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\Program Files (x86)\GnuPG\bin;C:\Program Files\Java\jdk-25\bin;."/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="25+36-3489"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="25"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="25"/>
+<property name="java.version.date" value="2025-09-16"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="25"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="25+36-3489"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="native.encoding" value="Cp1250"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 11"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="stderr.encoding" value="cp852"/>
+<property name="stdin.encoding" value="cp852"/>
+<property name="stdout.encoding" value="cp852"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="libs/junit-platform-console-standalone-1.10.0.jar --classpath bin --scan-classpath --reports-dir reports --details verbose"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1250"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="user.country" value="PL"/>
+<property name="user.dir" value="C:\Users\egzamin\IdeaProjects\KopiaKlasyDziedziczenieKl2pgr1"/>
+<property name="user.home" value="C:\Users\egzamin"/>
+<property name="user.language" value="pl"/>
+<property name="user.name" value="user"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Europe/Warsaw"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="testHashCode()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testHashCode()]
+display-name: testHashCode()
+]]></system-out>
+</testcase>
+<testcase name="testNotEquals()" classname="rekord.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testNotEquals()]
+display-name: testNotEquals()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentYear()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentYear()]
+display-name: testEqualsDifferentYear()
+]]></system-out>
+</testcase>
+<testcase name="setIlośćPamięci()" classname="komputery.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setIlośćPamięci()]
+display-name: setIlośćPamięci()
+]]></system-out>
+</testcase>
+<testcase name="testKomputer()" classname="rekord.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:testKomputer()]
+display-name: testKomputer()
+]]></system-out>
+</testcase>
+<testcase name="setRokProdukcji()" classname="komputery.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setRokProdukcji()]
+display-name: setRokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="setProducent()" classname="komputery.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setProducent()]
+display-name: setProducent()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsAndHashCode()" classname="rekord.LaptopTest" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="producent()" classname="rekord.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:producent()]
+display-name: producent()
+]]></system-out>
+</testcase>
+<testcase name="getSystemOperacyjny()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getSystemOperacyjny()]
+display-name: getSystemOperacyjny()
+]]></system-out>
+</testcase>
+<testcase name="wyłącz()" classname="komputery.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:wyłącz()]
+display-name: wyłącz()
+]]></system-out>
+</testcase>
+<testcase name="testGetters()" classname="sealed.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testGetters()]
+display-name: testGetters()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsAndHashCode()" classname="rekord.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentOS()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentOS()]
+display-name: testEqualsDifferentOS()
+]]></system-out>
+</testcase>
+<testcase name="getRokProdukcji()" classname="sealed.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="testCopyEquality()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testCopyEquality()]
+display-name: testCopyEquality()
+]]></system-out>
+</testcase>
+<testcase name="testEquals_sameInstance()" classname="komputery.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_sameInstance()]
+display-name: testEquals_sameInstance()
+]]></system-out>
+</testcase>
+<testcase name="getProducent()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getProducent()]
+display-name: getProducent()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsAndHashCode()" classname="sealed.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+]]></system-out>
+</testcase>
+<testcase name="włacz()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:włacz()]
+display-name: włacz()
+]]></system-out>
+</testcase>
+<testcase name="copy()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:copy()]
+display-name: copy()
+]]></system-out>
+</testcase>
+<testcase name="wyłacz()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:wyłacz()]
+display-name: wyłacz()
+]]></system-out>
+</testcase>
+<testcase name="isWlaczony()" classname="komputery.KomputerTest" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:isWlaczony()]
+display-name: isWlaczony()
+]]></system-out>
+</testcase>
+<testcase name="testEquals()" classname="komputery.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals()]
+display-name: testEquals()
+]]></system-out>
+</testcase>
+<testcase name="getIlośćPamięci()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getIlośćPamięci()]
+display-name: getIlośćPamięci()
+]]></system-out>
+</testcase>
+<testcase name="wlacz()" classname="rekord.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:wlacz()]
+display-name: wlacz()
+]]></system-out>
+</testcase>
+<testcase name="testWlacz()" classname="sealed.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testWlacz()]
+display-name: testWlacz()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentMemory()" classname="komputery.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentMemory()]
+display-name: testEqualsDifferentMemory()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentObject()" classname="komputery.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentObject()]
+display-name: testEqualsDifferentObject()
+]]></system-out>
+</testcase>
+<testcase name="testNotEquals()" classname="rekord.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testNotEquals()]
+display-name: testNotEquals()
+]]></system-out>
+</testcase>
+<testcase name="włacz()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:włacz()]
+display-name: włacz()
+]]></system-out>
+</testcase>
+<testcase name="setProducent()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setProducent()]
+display-name: setProducent()
+]]></system-out>
+</testcase>
+<testcase name="rokProdukcji()" classname="rekord.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:rokProdukcji()]
+display-name: rokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentProducer()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentProducer()]
+display-name: testEqualsDifferentProducer()
+]]></system-out>
+</testcase>
+<testcase name="getSystemOperacyjny()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getSystemOperacyjny()]
+display-name: getSystemOperacyjny()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="rekord.SmartfonTest" time="0.004">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="getRokProdukcji()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="testEquals()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEquals()]
+display-name: testEquals()
+]]></system-out>
+</testcase>
+<testcase name="setRokProdukcji()" classname="komputery.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setRokProdukcji()]
+display-name: setRokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="rekord.LaptopTest" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="testEquals_differentProducent()" classname="komputery.KomputerTest" time="0.016">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_differentProducent()]
+display-name: testEquals_differentProducent()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="komputery.KomputerTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="setProducent()" classname="sealed.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:setProducent()]
+display-name: setProducent()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentClass()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsDifferentClass()]
+display-name: testEqualsDifferentClass()
+]]></system-out>
+</testcase>
+<testcase name="getProducent()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getProducent()]
+display-name: getProducent()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentObject()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentObject()]
+display-name: testEqualsDifferentObject()
+]]></system-out>
+</testcase>
+<testcase name="myFirstTest()" classname="rekord.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:myFirstTest()]
+display-name: myFirstTest()
+]]></system-out>
+</testcase>
+<testcase name="setIloscPortowUSB()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setIloscPortowUSB()]
+display-name: setIloscPortowUSB()
+]]></system-out>
+</testcase>
+<testcase name="testEquals_differentClass()" classname="komputery.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testEquals_differentClass()]
+display-name: testEquals_differentClass()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsAndHashCode()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:testEqualsAndHashCode()]
+display-name: testEqualsAndHashCode()
+]]></system-out>
+</testcase>
+<testcase name="getModel()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getModel()]
+display-name: getModel()
+]]></system-out>
+</testcase>
+<testcase name="setWaga()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setWaga()]
+display-name: setWaga()
+]]></system-out>
+</testcase>
+<testcase name="włacz()" classname="sealed.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:włacz()]
+display-name: włacz()
+]]></system-out>
+</testcase>
+<testcase name="testEquals()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEquals()]
+display-name: testEquals()
+]]></system-out>
+</testcase>
+<testcase name="setModel()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setModel()]
+display-name: setModel()
+]]></system-out>
+</testcase>
+<testcase name="setProducent()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setProducent()]
+display-name: setProducent()
+]]></system-out>
+</testcase>
+<testcase name="getIlośćPamięci()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getIlośćPamięci()]
+display-name: getIlośćPamięci()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="sealed.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="getProducent()" classname="sealed.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:getProducent()]
+display-name: getProducent()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="sealed.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.LaptopTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="testToString()" classname="komputery.LaptopTest" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testToString()]
+display-name: testToString()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsNull()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsNull()]
+display-name: testEqualsNull()
+]]></system-out>
+</testcase>
+<testcase name="getCzasPracyNaBaterii()" classname="komputery.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getCzasPracyNaBaterii()]
+display-name: getCzasPracyNaBaterii()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentProducer()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentProducer()]
+display-name: testEqualsDifferentProducer()
+]]></system-out>
+</testcase>
+<testcase name="getModel()" classname="sealed.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.SmartfonTest]/[method:getModel()]
+display-name: getModel()
+]]></system-out>
+</testcase>
+<testcase name="testHashCode()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testHashCode()]
+display-name: testHashCode()
+]]></system-out>
+</testcase>
+<testcase name="getWaga()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getWaga()]
+display-name: getWaga()
+]]></system-out>
+</testcase>
+<testcase name="testAccessors()" classname="rekord.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.SmartfonTest]/[method:testAccessors()]
+display-name: testAccessors()
+]]></system-out>
+</testcase>
+<testcase name="getProducent()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:getProducent()]
+display-name: getProducent()
+]]></system-out>
+</testcase>
+<testcase name="getRokProdukcji()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getRokProdukcji()]
+display-name: getRokProdukcji()
+]]></system-out>
+</testcase>
+<testcase name="setSystemOperacyjny()" classname="komputery.SmartfonTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:setSystemOperacyjny()]
+display-name: setSystemOperacyjny()
+]]></system-out>
+</testcase>
+<testcase name="getModel()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getModel()]
+display-name: getModel()
+]]></system-out>
+</testcase>
+<testcase name="testCopyHashCode()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testCopyHashCode()]
+display-name: testCopyHashCode()
+]]></system-out>
+</testcase>
+<testcase name="setModel()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:setModel()]
+display-name: setModel()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsDifferentModel()" classname="komputery.SmartfonTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.SmartfonTest]/[method:testEqualsDifferentModel()]
+display-name: testEqualsDifferentModel()
+]]></system-out>
+</testcase>
+<testcase name="testHashCode()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:testHashCode()]
+display-name: testHashCode()
+]]></system-out>
+</testcase>
+<testcase name="testKomputer()" classname="sealed.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:sealed.KomputerTest]/[method:testKomputer()]
+display-name: testKomputer()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsNull()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsNull()]
+display-name: testEqualsNull()
+]]></system-out>
+</testcase>
+<testcase name="testEqualsSameObject()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:testEqualsSameObject()]
+display-name: testEqualsSameObject()
+]]></system-out>
+</testcase>
+<testcase name="testAccessors()" classname="rekord.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.LaptopTest]/[method:testAccessors()]
+display-name: testAccessors()
+]]></system-out>
+</testcase>
+<testcase name="getProducent()" classname="komputery.KomputerTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.KomputerTest]/[method:getProducent()]
+display-name: getProducent()
+]]></system-out>
+</testcase>
+<testcase name="setCzasPracyNaBaterii()" classname="komputery.LaptopTest" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:setCzasPracyNaBaterii()]
+display-name: setCzasPracyNaBaterii()
+]]></system-out>
+</testcase>
+<testcase name="getIloscPortowUSB()" classname="komputery.LaptopTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:komputery.LaptopTest]/[method:getIloscPortowUSB()]
+display-name: getIloscPortowUSB()
+]]></system-out>
+</testcase>
+<testcase name="model()" classname="rekord.KomputerTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:rekord.KomputerTest]/[method:model()]
+display-name: model()
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>
