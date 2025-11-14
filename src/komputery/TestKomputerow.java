@@ -45,5 +45,8 @@ public class TestKomputerow {
         Komputer k4 = k1.copy(null, "Latitude", -1); // zmieniamy tylko model
         IO.println("k4 (kopiowany z k1, zmieniony model): " + k4);
         IO.println("k1.equals(k4): " + k1.equals(k4)); // false
+
+        Smartfon smartfon = new Smartfon("Samsung", "Galaxy S21", 2022, "Android", 128);
+                IO.println(smartfon);
     }
 }

@@ -1,5 +1,7 @@
 package sealed;
 
+import java.util.Objects;
+
 public final class Laptop extends Komputer {
     private double waga;
     private int iloscPortowUSB;
@@ -42,8 +44,13 @@ public final class Laptop extends Komputer {
 
     @Override
     public String toString() {
-        return super.toString() + "Laptop{" +
-                "waga=" + waga +
+        // Zamiast wywoływać super.toString(), tworzymy kompletną reprezentację,
+        // która zawiera pola z klasy bazowej Komputer.
+        return "Laptop{" +
+                "producent='" + getProducent() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", rokProdukcji=" + getRokProdukcji() +
+                ", waga=" + waga +
                 ", iloscPortowUSB=" + iloscPortowUSB +
                 ", czasPracyNaBaterii=" + czasPracyNaBaterii +
                 '}';
@@ -52,7 +59,20 @@ public final class Laptop extends Komputer {
     // Ctrl + O
     @Override
     public void włacz() {
-       // super.włacz();
         IO.println("Laptop się uruchamia ...");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Laptop laptop = (Laptop) o;
+        return Double.compare(laptop.waga, waga) == 0 && iloscPortowUSB == laptop.iloscPortowUSB && Float.compare(laptop.czasPracyNaBaterii, czasPracyNaBaterii) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), waga, iloscPortowUSB, czasPracyNaBaterii);
     }
 }

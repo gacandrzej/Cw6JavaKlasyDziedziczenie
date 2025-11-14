@@ -1,5 +1,7 @@
 package komputery;
 
+import java.util.Objects;
+
 public class Smartfon extends Komputer{
     private String systemOperacyjny;
     private int ilośćPamięci;
@@ -37,5 +39,19 @@ public class Smartfon extends Komputer{
     @Override
     public void włacz() {
         IO.println("Smarttfon się uruchamia ..." + systemOperacyjny);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Smartfon smartfon = (Smartfon) o;
+        return ilośćPamięci == smartfon.ilośćPamięci && Objects.equals(systemOperacyjny, smartfon.systemOperacyjny);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), systemOperacyjny, ilośćPamięci);
     }
 }
