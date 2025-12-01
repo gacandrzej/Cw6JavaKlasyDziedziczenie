@@ -33,7 +33,7 @@ pipeline {
         stage('Publish Test Reports') {
             steps {
                 // Publikacja wyników testów w tabeli Jenkinsa (wymaga wtyczki JUnit)
-                junit 'build/test-results/test/*.xml'
+                junit '**/reports/*.xml'
             }
         }
 
