@@ -26,7 +26,7 @@ pipeline {
                 // 1. Ustaw uprawnienia do wykonania skryptu Gradle Wrapper
                // sh 'chmod +x gradlew'
                 // 2. Uruchom build
-                sh 'gradlew clean build'
+                sh './gradlew build'
             }
         }
 
