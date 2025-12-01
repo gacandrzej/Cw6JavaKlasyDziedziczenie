@@ -22,9 +22,10 @@ pipeline {
         }
 
         stage('Build and Test (Java 25)') {
-            // Kompilacja i uruchomienie testów przez Gradle w Agencie (JDK 25)
             steps {
-                // Wywołujemy Gradle
+                // 1. Ustaw uprawnienia do wykonania skryptu Gradle Wrapper
+                sh 'chmod +x gradlew'
+                // 2. Uruchom build
                 sh './gradlew clean build'
             }
         }
