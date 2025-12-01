@@ -24,9 +24,9 @@ pipeline {
         stage('Build and Test (Java 25)') {
             steps {
                 // 1. Ustaw uprawnienia do wykonania skryptu Gradle Wrapper
-                sh 'chmod +x gradlew'
+               // sh 'chmod +x gradlew'
                 // 2. Uruchom build
-                sh './gradlew clean build'
+                sh 'gradlew clean build'
             }
         }
 
